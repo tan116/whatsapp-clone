@@ -1,5 +1,11 @@
 .App {
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .App-logo {
@@ -35,4 +41,233 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.BackgroundContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.BackgroundHeader {
+  background-color: #128C7E;
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+.BackgroundBody {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+
+.MainContainer {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #111111; */
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+}
+
+.CellsContainer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Board {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #dddddd;
+}
+
+.ContactsContainer {
+  display: inline-block;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #cccccc;
+}
+
+.ContactsHeaderContainer {
+  display: flex;
+  width: 25%;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  background-color: #eeeeee;
+  flex-direction: row;
+  border-right: 1px solid #cccccc;
+}
+
+.SearchInput {
+  display: flex;
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  bottom: 0px;
+  outline: none;
+  border-radius: 8px;
+  margin: 10px;
+  border: none;
+  font-size: 16px;
+  padding: 5%;
+}
+
+.ContactListContainer {
+  padding-top: 70px;
+}
+
+.MessagesContainer {
+  display: inline-block;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+  background-color: #E5DCDA;
+  /* border: 1px solid #cccccc; */
+  overflow: hidden;
+  overflow-y: scroll;
+  /* padding-top: 70px; */
+}
+
+.MessageListContainer {
+  padding-top: 70px;
+}
+
+.MessagesHeaderContainer {
+  display: flex;
+  width: 75%;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  background-color: #eeeeee;
+  flex-direction: row;
+}
+
+.MessagesHeaderName {
+  margin: 20px 0px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.MessagesHeaderImage {
+  margin: 10px 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #dddddd;
+  border-radius: 20px;
+}
+
+.ContactListItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.ContactListItem:hover {
+  background-color: #eeeeee;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.ContactImage {
+  margin-left: 20px;
+  width: 46px;
+  height: 46px;
+  background-color: #aaaaaa;
+  border-radius: 23px;
+}
+
+.ContactItemTextContainer {
+  flex-direction: column;
+  text-align: left;
+}
+
+.ContactName {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.ContactItemSubtext {
+  color: #666666;
+  font-size: 14px;
+  margin-left: 10px;
+  /* padding-top: 5px; */
+}
+
+.MessageByYou {
+  display: flex;
+  /* float: right; */
+  flex-direction: row-reverse;
+  padding: 10px;
+  background-color: #E5DCDA;
+  margin-right: 20px;
+}
+
+.MessageByOther {
+  display: flex;
+  /* float: left; */
+  flex-direction: row;
+  padding: 10px;
+  background-color: #E5DCDA;
+  margin-left: 20px;
+}
+
+.MessageText {
+  font-size: 14px;
+  color: #111111;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.MessageInputContainer {
+  display: flex;
+  width: 75%;
+  height: 90px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #eeeeee;
+}
+
+.MessageInput {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  outline: none;
+  border-radius: 8px;
+  margin: 10px 10px 10px 40px;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
 }
